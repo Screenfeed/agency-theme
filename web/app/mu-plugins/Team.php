@@ -20,6 +20,8 @@ class Team
     public function __construct()
     {
         add_action( 'init', [ $this, 'registerPostType' ] );
+        add_filter ( 'manage_' . self::CPT_SLUG . '_posts_columns', [ $this, 'addAcfColumns' ] );
+        add_action ( 'manage_' . self::CPT_SLUG . '_posts_custom_column', [ $this, 'addAcfCustomColumns' ], 10, 2 );
     }
 
     public static function get_instance()
@@ -45,4 +47,18 @@ class Team
         ];
         register_post_type( self::CPT_SLUG, $args );
     }
+
+    public function addAcfColumns ( $columns ) {
+        return array_merge ( $columns, [
+            'post' => __ ( 'Post', 'agency' )
+        ] );
+    }
+
+    public function addAcfCustomColumns ( $column, $post_id ) {
+        switch ( $column ) {
+            case 'post':
+                echo get_post_meta ( $post_id, 'post', true );
+                break;
+        }
+    }    
 }
