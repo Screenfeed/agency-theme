@@ -2,7 +2,7 @@
   "name": "louisgab/agency",
   "type": "project",
   "license": "MIT",
-  "description": "Agency theme",
+  "description": "WordPress theme",
   "homepage": "https://github.com/louisgab/agency-theme",
   "repositories": [
     {
@@ -15,7 +15,10 @@
     "composer/installers": "^1.4",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.9.4",
-    "oscarotero/env": "^1.1.0"
+    "oscarotero/env": "^1.1.0",
+    "wpackagist-plugin/advanced-custom-fields": "^5.6.8",
+    "wpackagist-plugin/wp-pagenavi": "^2.92",
+    "wpackagist-plugin/contact-form-7": "^5.0.1"
   },
   "extra": {
     "installer-paths": {
