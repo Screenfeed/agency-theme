@@ -1,11 +1,11 @@
-<?php include_once( 'header.php' ); ?>
+<?php get_header(); ?>
 
 	<article class="single-project">
 
 		<header class="page-header">
 
 			<h1 class="page-title align-left">Things we have done</h1>
-			
+
 			<a href="portfolio-4-columns.html" class="button no-bg medium align-right">
 				All Projects <img src="img/icon-grid.png" alt="" class="icon">
 			</a>
@@ -18,11 +18,11 @@
 				<li class="prev"><a href="#" class="button medium no-bg"><span class="arrow left">&raquo;</span> Previous</a></li>
 				<li class="next"><a href="#" class="button medium no-bg">Next <span class="arrow">&raquo;</span></a></li>
 			</ul><!-- end .portfolio-pagination -->
-			
+
 		</header><!-- end .page-header -->
 
 		<div id="main">
-		
+
 			<div class="image-gallery-slider">
 
 				<ul>
@@ -46,9 +46,9 @@
 					</li>
 
 				</ul>
-				
+
 			</div><!-- end .image-gallery-slider -->
-		
+
 		</div><!-- end #main -->
 
 		<div id="sidebar">
@@ -73,7 +73,7 @@
 			</p>
 
 		</div><!-- end #sidebar -->
-		
+
 	</article><!-- end .single-project -->
-	
-<?php include_once( 'footer.php' ); ?>
+
+<?php get_footer(); ?>

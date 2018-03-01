@@ -1,78 +1,78 @@
-<?php include_once( 'header.php' ); ?>
+<?php get_header(); ?>
 
 	<h2 class="slogan align-center">We are a group of experienced designers and developers.<br />
 	We set new standards in user experience &amp; make future happen.</h2>
 
 	<section id="features-slider" class="ss-slider">
-	
+
 		<article class="slide">
-		
+
 			<img src="img/placeholders/slider-slide-1.jpg" alt="" class="slide-bg-image" />
-			
+
 			<div class="slide-button">
 				<span class="dropcap">1</span>
 				<h5>Responsive Layout</h5>
 			</div>
-		
+
 			<div class="slide-content">
 				<h2>Responsive Layout</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus justo.</p>
 				<p><a class="button" href="#">Read More</a></p>
 			</div>
-			
+
 		</article><!-- end .slide (Responsive Layout) -->
-	
+
 		<article class="slide">
-		
+
 			<img src="img/placeholders/slider-slide-2.jpg" alt="" class="slide-bg-image" />
-		
-			<div class="slide-button">		
+
+			<div class="slide-button">
 				<span class="dropcap">2</span>
 				<h5>HTML5 / CSS3</h5>
 			</div>
-			
+
 			<div class="slide-content">
 				<h2>HTML5 / CSS3</h2>
 				<p>Hendrerit eleifend condimentum quis, varius at lacus. Donec ultrices justo scelerisque erat feugiat sed mattis justo volutpat.</p>
 				<p><a class="button" href="#">Read More</a></p>
 			</div>
-			
+
 		</article><!-- end .slide (HTML5 / CSS3) -->
-	
+
 		<article class="slide">
-		
+
 			<img src="img/placeholders/slider-slide-3.jpg" alt="" class="slide-bg-image" />
-		
+
 			<div class="slide-button">
 				<span class="dropcap">3</span>
 				<h5>Easily Customisable</h5>
 			</div>
-			
+
 			<div class="slide-content">
 				<h2>Easily Customisable</h2>
 				<p>Etiam at nunc felis, vitae gravida libero. Morbi molestie elit eget metus volutpat vitae bibendum quam lacinia. Maecenas porttitor blandit nisl sit amet blandit. Phasellus porta sodales accumsan.</p>
 				<p><a class="button" href="#">Read More</a></p>
 			</div>
-			
+
 		</article><!-- end .slide (Easily Customisable) -->
-	
+
 		<article class="slide">
-		
+
 			<img src="img/placeholders/slider-slide-4.jpg" alt="" class="slide-bg-image" />
-		
+
 			<div class="slide-button">
 				<span class="dropcap">4</span>
 				<h5>Unique &amp; Clean</h5>
 			</div>
-			
+
 			<div class="slide-content">
 				<h2>Unique &amp; Clean</h2>
 				<p>Fusce porta elit quis nunc mollis ut lacinia eros accumsan. Aenean consequat egestas diam, vel pharetra tellus venenatis in.</p>
 				<p><a class="button" href="#">Read More</a></p>
 			</div>
-			
+
 		</article><!-- end .slide (Unique & Clean) -->
-		
+
 	</section><!-- end #features-slider -->
 
 	<h6 class="section-title">Latest Projects</h6>
@@ -172,11 +172,11 @@
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
-					
+
 			</div><!-- end .entry-body -->
 
 		</li>
-		
+
 		<li>
 
 			<a href="single-post.html">
@@ -200,11 +200,11 @@
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
-					
+
 			</div><!-- end .entry-body -->
 
 		</li>
-		
+
 		<li>
 
 			<a href="single-post.html">
@@ -228,11 +228,11 @@
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
-					
+
 			</div><!-- end .entry-body -->
 
 		</li>
-		
+
 		<li>
 
 			<a href="single-post.html">
@@ -256,11 +256,11 @@
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.</p>
-					
+
 			</div><!-- end .entry-body -->
 
 		</li>
 
 	</ul><!-- end .post-carousel -->
 
-<?php include_once( 'footer.php' ); ?>
+<?php get_footer(); ?>

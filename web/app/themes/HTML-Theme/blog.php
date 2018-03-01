@@ -1,11 +1,15 @@
-<?php include_once( 'header.php' ); ?>
+<?php
+/*
+Template Name: Blog
+*/
+get_header(); ?>
 
 	<header class="page-header">
-	
+
 		<h1 class="page-title">Welcome to our blog</h1>
-		
+
 	</header><!-- end .page-header -->
-	
+
 	<section id="main">
 
 		<article class="entry clearfix">
@@ -21,7 +25,7 @@
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-				
+
 			</div><!-- end .entry-body -->
 
 			<div class="entry-meta">
@@ -34,9 +38,9 @@
 				</ul>
 
 			</div><!-- end .entry-meta -->
-			
+
 		</article><!-- end .entry -->
-		
+
 		<article class="entry clearfix">
 
 			<a href="single-post.php" title="">
@@ -50,7 +54,7 @@
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-				
+
 			</div><!-- end .entry-body -->
 
 			<div class="entry-meta">
@@ -63,9 +67,9 @@
 				</ul>
 
 			</div><!-- end .entry-meta -->
-			
+
 		</article><!-- end .entry -->
-		
+
 		<article class="entry clearfix">
 
 			<a href="single-post.php" title="">
@@ -79,7 +83,7 @@
 				</a>
 
 				<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-				
+
 			</div><!-- end .entry-body -->
 
 			<div class="entry-meta">
@@ -92,9 +96,9 @@
 				</ul>
 
 			</div><!-- end .entry-meta -->
-			
+
 		</article><!-- end .entry -->
-		
+
 		<ul class="pagination">
 			<li class="next"><a href="#">&larr; Next</a></li>
 			<li><a href="#">1</a></li>
@@ -103,9 +107,9 @@
 			<li><a href="#">4</a></li>
 			<li class="prev"><a href="#">Previous &rarr;</a></li>
 		</ul>
-		
+
 	</section><!-- end #main -->
 
 	<?php include_once( 'sidebar.php' ); ?>
-	
-<?php include_once( 'footer.php' ); ?>
+
+<?php get_footer(); ?>

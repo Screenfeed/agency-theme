@@ -1,9 +1,9 @@
 <?php include_once( 'header.php' ); ?>
 
 	<header class="page-header">
-	
+
 		<h1 class="page-title">Welcome to our blog</h1>
-		
+
 	</header><!-- end .page-header -->
 
 	<section id="main">
@@ -36,7 +36,7 @@
 				</ul>
 
 				<p>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt. Maecenas accumsan imperdiet faucibus. Mauris tincidunt, nulla quis rhoncus malesuada, nibh ante pulvinar dolor, ut lacinia libero risus nec orci.</p>
-				
+
 			</div><!-- end .entry-body -->
 
 			<div class="entry-meta">
@@ -49,7 +49,7 @@
 				</ul>
 
 			</div><!-- end .entry-meta -->
-			
+
 		</article><!-- end .entry -->
 
 		<section id="comments">
@@ -69,13 +69,13 @@
 							<h5 class="author"><a href="#">John Doe</a> - <a href="#" class="comment-reply-link">Reply</a></h5>
 
 							<p class="date">January 06, 2011</p>
-							
+
 						</div><!-- end .comment-meta -->
 
 						<div class="comment-body">
 
 							<p>Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus.</p>
-							
+
 						</div><!-- end .comment-body -->
 
 					</article>
@@ -93,13 +93,13 @@
 									<h5 class="author"><a href="#">John Doe</a> - <a href="#" class="comment-reply-link">Reply</a></h5>
 
 									<p class="date">January 06, 2011</p>
-									
+
 								</div><!-- end .comment-meta -->
 
 								<div class="comment-body">
 
 									<p>Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus.</p>
-									
+
 								</div><!-- end .comment-body -->
 
 							</article>
@@ -121,13 +121,13 @@
 							<h5 class="author"><a href="#">John Doe</a> - <a href="#" class="comment-reply-link">Reply</a></h5>
 
 							<p class="date">January 06, 2011</p>
-							
+
 						</div><!-- end .comment-meta -->
 
 						<div class="comment-body">
 
 							<p>Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus.</p>
-							
+
 						</div><!-- end .comment-body -->
 
 					</article>
@@ -145,13 +145,13 @@
 							<h5 class="author"><a href="#">John Doe</a> - <a href="#" class="comment-reply-link">Reply</a></h5>
 
 							<p class="date">January 06, 2011</p>
-							
+
 						</div><!-- end .comment-meta -->
 
 						<div class="comment-body">
 
 							<p>Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus.</p>
-							
+
 						</div><!-- end .comment-body -->
 
 					</article>
@@ -159,7 +159,7 @@
 				</li>
 
 			</ol>
-			
+
 		</section>
 
 		<section id="respond">
@@ -167,7 +167,7 @@
 			<h6 class="section-title">Leave a Comment</h6>
 
 			<form method="post" class="comments-form">
-			
+
 				<p class="input-block">
 					<label for="comment-name"><strong>Name</strong> (required)</label>
 					<input type="text" name="name" value="" id="comment-name" required>
@@ -177,7 +177,7 @@
 					<label for="comment-email"><strong>Email</strong> (required)</label>
 					<input type="email" name="email" value="" id="comment-email" required>
 				</p>
-				
+
 				<p class="input-block">
 					<label for="comment-url"><strong>Website</strong></label>
 					<input type="url" name="url" value="" id="comment-url">
@@ -187,17 +187,17 @@
 					<label for="comment-message"><strong>Your Comment</strong> (required)</label>
 					<textarea name="message" id="comment-message" cols="88" rows="6" required></textarea>
 				</p>
-			
+
 				<input type="submit" value="Submit">
 
 				<div class="clear"></div>
 
 			</form>
-			
+
 		</section>
-		
+
 	</section><!-- end #main -->
 
-	<?php include_once( 'sidebar.php' ); ?>
-	
-<?php include_once( 'footer.php' ); ?>
+	<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>

@@ -16,7 +16,7 @@
 	</div><!-- end .widget -->
 
 	<div class="widget">
-	
+
 		<h6 class="widget-title">Text Widget</h6>
 
 		<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>

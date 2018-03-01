@@ -1,7 +1,7 @@
-<?php include_once( 'header.php' ); ?>
+<?php get_header(); ?>
 
 	<header class="page-header">
-	
+
 		<h1 class="page-title">Things we have done</h1>
 
 		<ul id="portfolio-items-filter">
@@ -15,7 +15,7 @@
 			<li><a data-categories="web">Web</a></li>
 
 		</ul><!-- end #portfolio-items-filter -->
-		
+
 	</header><!-- end .page-header -->
 
 	<section id="portfolio-items" class="clearfix">
@@ -30,7 +30,7 @@
 				<h5 class="title">Altered</h5>
 				<span class="categories">illustration / design</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Altered) -->
 
 		<article class="one-third" data-categories="illustration photography">
@@ -43,7 +43,7 @@
 				<h5 class="title">Snow Tower</h5>
 				<span class="categories">illustration / photography</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Snow Tower) -->
 
 		<article class="one-third" data-categories="illustration animation">
@@ -56,7 +56,7 @@
 				<h5 class="title">Not the end</h5>
 				<span class="categories">animation / illustration</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Not the end) -->
 
 		<article class="one-third" data-categories="animation web">
@@ -69,7 +69,7 @@
 				<h5 class="title">Shift</h5>
 				<span class="categories">web / animation</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Shift) -->
 
 		<article class="one-third" data-categories="illustration photography">
@@ -82,7 +82,7 @@
 				<h5 class="title">Synergy</h5>
 				<span class="categories">illustration / photography</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Synergy) -->
 
 		<article class="one-third" data-categories="photography">
@@ -95,7 +95,7 @@
 				<h5 class="title">The Game</h5>
 				<span class="categories">photography</span>
 			</a>
-			
+
 		</article><!-- end .one-third (The Game) -->
 
 		<article class="one-third" data-categories="illustration web animation">
@@ -108,7 +108,7 @@
 				<h5 class="title">Trantor</h5>
 				<span class="categories">illustration / web / animation</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Trantor) -->
 
 		<article class="one-third" data-categories="illustration design">
@@ -121,7 +121,7 @@
 				<h5 class="title">Futurisk</h5>
 				<span class="categories">illustration / design</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Futurisk) -->
 
 		<article class="one-third" data-categories="design web">
@@ -134,9 +134,9 @@
 				<h5 class="title">Forrst App UI Design Mockups</h5>
 				<span class="categories">design / web</span>
 			</a>
-			
+
 		</article><!-- end .one-third (Forrst Android App UI Design Mockups) -->
 
 	</section><!-- end #portfolio-items -->
-	
-<?php include_once( 'footer.php' ); ?>
+
+<?php get_footer(); ?>
