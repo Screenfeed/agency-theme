@@ -15,7 +15,6 @@ add_action( 'after_setup_theme', function() {
     add_theme_support('soil-disable-trackbacks');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-nav-walker');
-    // add_theme_support('soil-relative-urls');
 
     register_nav_menus( array(
         'header' => __( 'Header', 'agency' ),
@@ -28,18 +27,19 @@ add_action( 'wp_enqueue_scripts', function() {
 
     wp_enqueue_style( 'style', get_theme_file_uri( '/css/style.css' ), [], null );
     wp_enqueue_style( 'fancybox', get_theme_file_uri( '/css/fancybox.min.css' ), [], null );
-    wp_enqueue_style( 'video', get_theme_file_uri( '/css/video-js.min.css' ), [], null );
+    // wp_enqueue_style( 'video', get_theme_file_uri( '/css/video-js.min.css' ), [], null ); // Not in sources
     wp_enqueue_style( 'audioplayer', get_theme_file_uri( '/css/audioplayerv1.min.css' ), [], null );
 
     wp_enqueue_script( 'modernizr', get_theme_file_uri( '/js/modernizr.custom.js' ), [], null );
-    wp_enqueue_script( 'video', get_theme_file_uri( '/js/video.min.js' ), [], null );
-    wp_add_inline_script( 'video', "_V_.options.flash.swf = 'http://localhost/smartstart/js/video-js.swf';" );
+    // wp_enqueue_script( 'video', get_theme_file_uri( '/js/video.min.js' ), [], null ); // Not in sources
+    // wp_add_inline_script( 'video', "_V_.options.flash.swf = 'http://localhost/smartstart/js/video-js.swf';" );
 
     wp_deregister_script('jquery');
     wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', [], null, true );
     wp_enqueue_script( 'respond', get_theme_file_uri( '/js/respond.min.js' ), [], null, true );
     wp_enqueue_script( 'easing', get_theme_file_uri( '/js/jquery.easing-1.3.min.js' ), [ 'jquery' ], null, true );
-    wp_enqueue_script( 'smartstartslider', get_theme_file_uri( '/js/jquery.smartStartSlider.min.js' ), [ 'jquery' ], null, true );
+    wp_enqueue_script( 'fancybox', get_theme_file_uri( '/js/jquery.fancybox.pack.js' ), [ 'jquery' ], null, true );
+    wp_enqueue_script( 'slider', get_theme_file_uri( '/js/jquery.smartStartSlider.min.js' ), [ 'jquery' ], null, true );
     wp_enqueue_script( 'jcarousel', get_theme_file_uri( '/js/jquery.jcarousel.min.js' ), [ 'jquery' ], null, true );
     wp_enqueue_script( 'cycle', get_theme_file_uri( '/js/jquery.cycle.all.min.js' ), [ 'jquery' ], null, true );
     wp_enqueue_script( 'isotope', get_theme_file_uri( '/js/jquery.isotope.min.js' ), [ 'jquery' ], null, true );
