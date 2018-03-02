@@ -3,13 +3,7 @@
     <div class="container">
         <div class="three-fourth">
             <nav id="footer-nav" class="clearfix">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="elements.html">Features</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="portfolio-4-columns.html">Portfolio</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
+                <?php wp_nav_menu( [ 'theme_location' => 'footer' ] ); ?>
             </nav>
             <ul class="contact-info">
                 <li class="address">012 Some Street. New York, NY, 12345. USA</li>

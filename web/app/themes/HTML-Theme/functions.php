@@ -9,6 +9,18 @@ add_action( 'after_setup_theme', function() {
     add_image_size( '680x235', 680, 235, true );
     add_image_size( '300x190', 300, 190, true );
     add_image_size( '220x140', 220, 140, true );
+
+    add_theme_support('soil-clean-up');
+    add_theme_support('soil-disable-asset-versioning');
+    add_theme_support('soil-disable-trackbacks');
+    add_theme_support('soil-nice-search');
+    add_theme_support('soil-nav-walker');
+    // add_theme_support('soil-relative-urls');
+
+    register_nav_menus( array(
+        'header' => __( 'Header', 'agency' ),
+        'footer' => __( 'Footer', 'agency' ),
+    ) );
 });
 
 add_action( 'wp_enqueue_scripts', function() {
@@ -23,6 +35,7 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_script( 'video', get_theme_file_uri( '/js/video.min.js' ), [], null );
     wp_add_inline_script( 'video', "_V_.options.flash.swf = 'http://localhost/smartstart/js/video-js.swf';" );
 
+    wp_deregister_script('jquery');
     wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', [], null, true );
     wp_enqueue_script( 'respond', get_theme_file_uri( '/js/respond.min.js' ), [], null, true );
     wp_enqueue_script( 'easing', get_theme_file_uri( '/js/jquery.easing-1.3.min.js' ), [ 'jquery' ], null, true );

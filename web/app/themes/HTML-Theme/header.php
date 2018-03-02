@@ -8,17 +8,11 @@
 </head>
 <body <?php body_class(); ?>>
     <header id="header" class="container clearfix">
-        <a href="index.php" id="logo">
+        <a href="<?= home_url(); ?>" id="logo">
             <img src="<?= get_theme_file_uri('img/logo.png'); ?>" alt="SmartStart">
         </a>
         <nav id="main-nav">
-            <ul>
-                <li class="current"><a href="index.php">Home</a></li>
-                <li><a href="team.php">Our Team</a></li>
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
+            <?php wp_nav_menu( [ 'theme_location' => 'header' ] ); ?>
         </nav>
     </header>
     <section id="content" class="container clearfix">
