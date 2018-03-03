@@ -34,12 +34,8 @@ while ( have_posts() ) : the_post(); ?>
     <div class="three-fourth last">
         <h3>Let's keep in touch</h3>
         <?php the_content(); ?>
-            
-
-            </div><!-- end .three-fourth.last -->
-
-        </div><!-- end .container -->
-
-<?php endwhile; ?>
-
-<?php get_footer(); ?>
+    </div>
+</div>
+<?php
+endwhile;
+get_footer();
