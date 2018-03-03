@@ -12,7 +12,7 @@
             <img src="<?= get_theme_file_uri('img/logo.png'); ?>" alt="SmartStart">
         </a>
         <nav id="main-nav">
-            <?php wp_nav_menu( [ 'theme_location' => 'header' ] ); ?>
+            <?php wp_nav_menu( [ 'theme_location' => 'header', 'container' => false ] ); ?>
         </nav>
     </header>
     <section id="content" class="container clearfix">
