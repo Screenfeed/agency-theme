@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="not-ie no-js" lang="<?php language_attributes(); ?>">
+<html class="not-ie no-js" <?php language_attributes(); ?>>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
