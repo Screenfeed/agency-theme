@@ -60,5 +60,12 @@ class Team
                 echo get_post_meta ( $post_id, 'post', true );
                 break;
         }
-    }    
+    }
+
+    public static function getPosts( array $args = [] )
+    {
+        $params = array_merge( $args, [ 'post_type' => self::CPT_SLUG ] );
+        $query = new \WP_Query( $params );
+        return $query->posts;
+    }
 }
