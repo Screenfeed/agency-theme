@@ -10,7 +10,7 @@ while ( have_posts() ) : the_post(); ?>
             <?= __( 'Things we have done', THEME_DOMAIN ); ?>
         </h1>
         <a href="<?= get_post_type_archive_link( Project::CPT_SLUG ); ?>" class="button no-bg medium align-right">
-            <?= __( 'All Projects', THEME_DOMAIN ); ?> <img src="img/icon-grid.png" alt="" class="icon">
+            <?= __( 'All Projects', THEME_DOMAIN ); ?> <img src="<?= THEME_URL . '/img/icon-grid.png'; ?>" alt="" class="icon">
         </a>
         <hr />
         <h2 class="project-title">
