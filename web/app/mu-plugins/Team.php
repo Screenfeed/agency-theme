@@ -9,8 +9,6 @@ namespace App;
 
 defined( 'ABSPATH' ) || die();
 
-Team::get_instance();
-
 class Team
 {
     private static $instance;
@@ -20,8 +18,8 @@ class Team
     public function __construct()
     {
         add_action( 'init', [ $this, 'registerPostType' ] );
-        add_filter ( 'manage_' . self::CPT_SLUG . '_posts_columns', [ $this, 'addAcfColumns' ] );
-        add_action ( 'manage_' . self::CPT_SLUG . '_posts_custom_column', [ $this, 'addAcfCustomColumns' ], 10, 2 );
+        add_filter ( 'manage_' . self::CPT_SLUG . '_posts_columns', [ $this, 'forceColumnsTitles' ] );
+        add_action ( 'manage_' . self::CPT_SLUG . '_posts_custom_column', [ $this, 'forceColumnsValues' ], 10, 2 );
     }
 
     public static function get_instance()
@@ -35,37 +33,34 @@ class Team
     public function registerPostType()
     {
         $args = [
-            'label'       => __( ucfirst(self::CPT_SLUG) . 's', 'agency' ),
-            'public'      => true,
-            'has_archive' => true,
-            'rewrite'     => [
-                'slug'       => __( self::CPT_SLUG . 's', 'agency' ),
-                'with_front' => false,
-            ],
-            'supports'  => [ 'title', 'editor','thumbnail', 'excerpt' ],
-            'menu_icon' => 'dashicons-groups',
+            'label'        => __( ucfirst( self::CPT_SLUG ) . 's', THEME_DOMAIN ),
+            'public'       => true,
+            'hierarchical' => false,
+            'has_archive'  => false,
+            'rewrite'      => [ 'slug' => self ::CPT_SLUG ],
+            'supports'     => [ 'title', 'editor','thumbnail', 'excerpt' ],
+            'menu_icon'    => 'dashicons-groups',
         ];
         register_post_type( self::CPT_SLUG, $args );
     }
 
-    public function addAcfColumns ( $columns ) {
+    public function forceColumnsTitles ( $columns ) {
         return array_merge ( $columns, [
-            'post' => __ ( 'Post', 'agency' )
+            'post'      => __( 'Post', THEME_DOMAIN ),
+            'thumbnail' => __( 'Thumbnail', THEME_DOMAIN ),
         ] );
     }
 
-    public function addAcfCustomColumns ( $column, $post_id ) {
+    public function forceColumnsValues ( $column, $post_id ) {
         switch ( $column ) {
             case 'post':
                 echo get_post_meta ( $post_id, 'post', true );
                 break;
+            case 'thumbnail':
+                echo get_the_post_thumbnail( $post_id,  [40, 40] );
+                break;
         }
     }
-
-    public static function getPosts( array $args = [] )
-    {
-        $params = array_merge( $args, [ 'post_type' => self::CPT_SLUG ] );
-        $query = new \WP_Query( $params );
-        return $query->posts;
-    }
 }
+
+Team::get_instance();
