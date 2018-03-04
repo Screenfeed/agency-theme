@@ -1,15 +1,14 @@
 <?php
 use App\Project;
 get_header();
-
 while ( have_posts() ) : the_post(); ?>
 
 <article class="single-project">
     <header class="page-header">
         <h1 class="page-title align-left">
-            <?= __( 'Things we have done', THEME_DOMAIN ); ?>
+            <?= get_the_title(); ?>
         </h1>
-        <a href="<?= get_post_type_archive_link( Project::CPT_SLUG ); ?>" class="button no-bg medium align-right">
+        <a href="<?= get_the_permalink(); ?>" class="button no-bg medium align-right">
             <?= __( 'All Projects', THEME_DOMAIN ); ?> <img src="<?= THEME_URL . '/img/icon-grid.png'; ?>" alt="" class="icon">
         </a>
         <hr />
