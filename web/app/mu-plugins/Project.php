@@ -59,7 +59,7 @@ class Project
                 'hierarchical' => true,
             ]
         ];
-        \register_taxonomy( self::TAXO_SLUG, self::CPT_SLUG, $args );
-        \register_taxonomy_for_object_type( self::TAXO_SLUG, self::CPT_SLUG );
+        register_taxonomy( self::TAXO_SLUG, self::CPT_SLUG, $args );
+        register_taxonomy_for_object_type( self::TAXO_SLUG, self::CPT_SLUG );
     }
 }
