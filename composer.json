@@ -1,0 +1,37 @@
+{
+    "name": "louisgab/agency",
+    "type": "project",
+    "license": "MIT",
+    "description": "WordPress theme",
+    "homepage": "https://github.com/louisgab/agency-theme",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "^1.4",
+        "vlucas/phpdotenv": "^2.0.1",
+        "johnpbloch/wordpress": "4.9.4",
+        "oscarotero/env": "^1.1.0",
+        "wpackagist-plugin/advanced-custom-fields": "^5.6.8",
+        "wpackagist-plugin/wp-pagenavi": "^2.92",
+        "wpackagist-plugin/contact-form-7": "^5.0.1",
+        "roots/soil": "^3.7"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "web/app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "web/wp"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": ["web/app/mu-plugins/"]
+        }
+    }
+}
