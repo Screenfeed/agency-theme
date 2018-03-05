@@ -16,12 +16,12 @@ $projects_query = new WP_Query( [
     <h1 class="page-title">
         <?php the_title(); ?>
     </h1>
-    <?php get_template_part( 'components/portfolio/filter' ); ?>
+    <?php get_template_part( 'components/project/filter' ); ?>
 </header>
 
 <section id="portfolio-items" class="clearfix">
     <?php while ( $projects_query->have_posts() ): $projects_query->the_post(); ?>
-        <?php get_template_part( 'components/portfolio/items' ); ?>
+        <?php get_template_part( 'components/project/items' ); ?>
     <?php endwhile; ?>
 </section>
 
